@@ -1316,14 +1316,19 @@
     overflow: hidden;
   }
 
-  
-  
-/*Tytpes of phishing section CSS*/
+.head-123 .mbr-section-title{
+  color: #000000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 5;
+  margin-bottom: 1.5rem;
 
+}
 .flex-wrapper12351111{
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: auto;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 40px;
@@ -1425,5 +1430,6 @@ p {
     color: #000;
     margin-bottom: auto;
     text-align: center;
-    margin-top: auto: ;
+    margin-top: auto;
 }
+
