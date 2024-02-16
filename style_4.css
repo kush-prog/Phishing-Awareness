@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body .quiz-sec{
     font-family: sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('assets/images/code\ images.webp');
     background-size: cover;
