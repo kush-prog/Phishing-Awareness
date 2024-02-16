@@ -274,7 +274,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="">
+                <form action="" method="POST" class="mbr-form form-with-styler" name="Report-Form" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -301,17 +301,28 @@
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwovcCNTzcdZ5SKd_FIzznn457Ni1lznqDe_SiK1hOUffgrc8altAnay8JhqCfaliQ/exec'
 
-    const form = document.forms['Report-Form'];
+    const form = document.forms['Report-From'];
     
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thanks for re[porting! We'll get back to you soon."))
+        .then(response => alert("Thanks for reporting! We'll get back to you soon."))
         .then(() => {window.location.reload();})
         .catch(error => console.error('Error!', error.message))
     })
 </script>
-
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz86cD2FbM1PrSxS0PnfhEh7kEaOgV8K42d5kRwVUANYJUjbbBE4aF99dO4E0EBWhqX/exec'
+    const form = document.forms['sellform']
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  window.location.reload(); })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script> -->
 <section class="social05 cid-u3ZfHYqvmH" id="follow-us-2-u3ZfHYqvmH">
     <div class="container">
         <div class="row">
